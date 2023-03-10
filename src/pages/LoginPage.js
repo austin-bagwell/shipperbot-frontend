@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { Navbar } from "../components/Navbar.js";
 
 const PageWrapper = styled.div`
   border: 1px solid red;
+  max-width: 800px;
+  margin: auto;
 `;
 
 const Form = styled.form`
@@ -17,7 +18,6 @@ const Form = styled.form`
 function LoginPage(props) {
   return (
     <PageWrapper>
-      <Navbar></Navbar>
       <Form>
         <label for="username">username</label>
         <input type="text" name="username"></input>
