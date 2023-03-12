@@ -44,7 +44,12 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-function LoginPage({ submit }) {
+function LoginPage() {
+  const submit = (e) => {
+    e.preventDefault();
+    console.log(`clicked submit button`);
+  };
+
   return (
     <FormWrapper>
       <h2 style={{ marginBottom: 0, textAlign: "center" }}>

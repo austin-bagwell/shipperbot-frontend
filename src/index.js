@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import styled from "styled-components";
+import App from "./App";
 import { LoginPage } from "./pages/LoginPage.js";
 import { Navbar } from "./components/Navbar.js";
 import "./global.css";
@@ -19,8 +20,6 @@ const submit = (e) => {
 
 root.render(
   <React.StrictMode>
-    <Navbar></Navbar>
-    <Heading>OMG SHIPPERBOT IS HERE</Heading>
-    <LoginPage submit={submit}></LoginPage>
+    <App></App>
   </React.StrictMode>
 );
