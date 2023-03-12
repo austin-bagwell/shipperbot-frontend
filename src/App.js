@@ -13,9 +13,9 @@ function App() {
           <Navbar></Navbar>
           <Routes>
             <Route path="/" element={<Landing />}></Route>
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/signup" element={<Signup />}></Route>
-            <Route path="/about" element={<About />}></Route>
+            <Route path="login" element={<Login />}></Route>
+            <Route path="signup" element={<Signup />}></Route>
+            <Route path="about" element={<About />}></Route>
           </Routes>
         </div>
       </div>
