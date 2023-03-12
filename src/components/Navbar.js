@@ -19,16 +19,18 @@ const Crumb = styled.li`
   padding-left: 1rem;
 `;
 
-// const Link = styled.a`
-//   text-decoration: none;
-//   font-size: large;
-//   color: blue;
-// `;
-
 const Button = styled.button`
   background: blue;
   color: white;
   border-radius: 3px;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 1rem;
 `;
 
 function Navbar(props) {
@@ -37,13 +39,13 @@ function Navbar(props) {
       <Button>Mock Logo</Button>
       <LinkWrapper>
         <Crumb>
-          <Link to="/login">Login</Link>
+          <StyledLink to="/login">Login</StyledLink>
         </Crumb>
         <Crumb>
-          <Link to="/signup">Signup</Link>
+          <StyledLink to="/signup">Signup</StyledLink>
         </Crumb>
         <Crumb>
-          <Link to="/about">About</Link>
+          <StyledLink to="/about">About</StyledLink>
         </Crumb>
       </LinkWrapper>
     </Nav>
