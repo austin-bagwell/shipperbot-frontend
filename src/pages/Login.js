@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-function LoginPage() {
+export default function Login() {
   const submit = (e) => {
     e.preventDefault();
     console.log(`clicked submit button`);
@@ -68,5 +68,3 @@ function LoginPage() {
     </FormWrapper>
   );
 }
-
-export { LoginPage };

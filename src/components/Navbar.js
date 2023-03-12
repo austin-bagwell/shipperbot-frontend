@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Nav = styled.nav`
   display: flex;
@@ -18,11 +19,11 @@ const Crumb = styled.li`
   padding-left: 1rem;
 `;
 
-const Link = styled.a`
-  text-decoration: none;
-  font-size: large;
-  color: blue;
-`;
+// const Link = styled.a`
+//   text-decoration: none;
+//   font-size: large;
+//   color: blue;
+// `;
 
 const Button = styled.button`
   background: blue;
@@ -35,14 +36,14 @@ function Navbar(props) {
     <Nav>
       <Button>Mock Logo</Button>
       <LinkWrapper>
-        <Crumb href="#">
-          <Link href="#">Login</Link>
+        <Crumb>
+          <Link to="/login">Login</Link>
         </Crumb>
-        <Crumb href="#">
-          <Link href="#">Signup</Link>
+        <Crumb>
+          <Link to="/login">Signup</Link>
         </Crumb>
-        <Crumb href="#">
-          <Link href="#">About</Link>
+        <Crumb>
+          <Link to="/about">About</Link>
         </Crumb>
       </LinkWrapper>
     </Nav>

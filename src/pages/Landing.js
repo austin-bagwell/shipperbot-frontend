@@ -15,7 +15,7 @@ const Wrapper = styled.section`
 `;
 
 // Use Title and Wrapper like any other React component – except they're styled!
-export function LandingPage() {
+export default function Landing() {
   return (
     <main>
       <Title>Welcome to shipperBot!</Title>
