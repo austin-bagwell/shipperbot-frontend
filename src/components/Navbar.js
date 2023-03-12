@@ -40,7 +40,7 @@ function Navbar(props) {
           <Link to="/login">Login</Link>
         </Crumb>
         <Crumb>
-          <Link to="/login">Signup</Link>
+          <Link to="/signup">Signup</Link>
         </Crumb>
         <Crumb>
           <Link to="/about">About</Link>
