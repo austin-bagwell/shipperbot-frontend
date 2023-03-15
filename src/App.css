@@ -1,4 +1,8 @@
 body {
   margin: 0;
-  background-color: lightgray;
+  background-color: white;
+}
+
+h2 {
+  margin: 0;
 }
