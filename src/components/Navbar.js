@@ -11,6 +11,7 @@ const Nav = styled.nav`
 
 const LinkWrapper = styled.ul`
   display: inline-block;
+  margin-bottom: 0;
 
   a {
     color: black;
