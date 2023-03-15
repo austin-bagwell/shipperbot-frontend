@@ -58,7 +58,7 @@ function Navbar() {
           <StyledLink to="/signup">Signup</StyledLink>
         </Crumb>
         <Crumb>
-          <StyledLink to="/about">About</StyledLink>
+          <StyledLink to="/">About</StyledLink>
         </Crumb>
       </LinkWrapper>
     </Nav>

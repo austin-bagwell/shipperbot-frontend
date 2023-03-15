@@ -3,7 +3,7 @@ import styled from "styled-components";
 const FormWrapper = styled.div`
   background-color: lightblue;
   box-shadow: 3px 6px 4px grey;
-  max-width: 30vw;
+  max-width: 35vw;
   min-height: 300px;
   padding: 2rem;
   margin: auto;
@@ -42,17 +42,26 @@ const Button = styled.button`
 
 const Link = styled.a`
   text-decoration: none;
-  font-size: 2em;
+  text-align: center;
+  font-size: 1.5em;
 `;
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 
   button:hover {
     color: black;
     background-color: #e75480;
+  }
+
+  a:hover {
+    color: darkorange;
+  }
+
+  a:active {
+    color: #e75480;
   }
 `;
 
@@ -72,18 +81,24 @@ export default function Login() {
       <FormWrapper>
         <h2 style={{ textAlign: "center" }}>Login, you scurrilous curr!</h2>
         <Form>
-          <div className="text-input-wrapper" style={{ display: "flexbox" }}>
+          <div
+            className="text-input-wrapper"
+            style={{ display: "flex", justifyContent: "space-around" }}
+          >
             <Label htmlFor="username">username:</Label>
             <Input name="username" type="text"></Input>
           </div>
-          <div className="text-input-wrapper" style={{ display: "flexbox" }}>
+          <div
+            className="text-input-wrapper"
+            style={{ display: "flex", justifyContent: "space-around" }}
+          >
             <Label htmlFor="password">password:</Label>
-            <Input name="passowrd" type="password"></Input>
+            <Input name="password" type="password"></Input>
           </div>
         </Form>
         <Wrapper>
           <Button onClick={submit}>Login</Button>
-          <Link a="#">Forgot your password?</Link>
+          <Link href="#">Forget your password?</Link>
         </Wrapper>
       </FormWrapper>
     </MainContentWrapper>
