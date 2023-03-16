@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MainContentWrapper } from "../components/wrappers/MainContentWrapper";
+import { MainContentWrapper } from "../components/wrappers/flexWrappers";
 
 const FormWrapper = styled.div`
   background-color: lightblue;
