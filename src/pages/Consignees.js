@@ -1,10 +1,14 @@
-// import styled from "styled-components";
+import styled from "styled-components";
+
+import { MainContentWrapper } from "../components/MainContentWrapper";
 
 export default function Consignees(props) {
   return (
-    <div>
+    <MainContentWrapper>
       <p>hello consignees</p>
-      <p>hello world?</p>
-    </div>
+      {/* search bar + batch upload btn + add new btn */}
+      {/* tabular consignee data */}
+      {/* pagination options */}
+    </MainContentWrapper>
   );
 }

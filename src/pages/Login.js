@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { MainContentWrapper } from "../components/MainContentWrapper";
+
 const FormWrapper = styled.div`
   background-color: lightblue;
   box-shadow: 3px 6px 4px grey;
@@ -63,11 +65,6 @@ const Wrapper = styled.div`
   a:active {
     color: #e75480;
   }
-`;
-
-const MainContentWrapper = styled.main`
-  margin: auto;
-  padding-top: 1.5rem;
 `;
 
 export default function Login() {
