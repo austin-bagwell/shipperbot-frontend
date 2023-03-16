@@ -1,6 +1,5 @@
 import styled from "styled-components";
-
-import { MainContentWrapper } from "../components/MainContentWrapper";
+import { MainContentWrapper } from "../components/wrappers/MainContentWrapper";
 
 export default function Consignees(props) {
   return (
