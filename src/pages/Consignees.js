@@ -10,7 +10,36 @@ const SearchWrapper = styled.div`
 const Table = styled.table`
   border: 1px solid black;
   margin: auto;
+  width: 40vw;
 `;
+
+const dummyConsignees = [
+  {
+    id: 0,
+    name: "Target",
+    timeInTransit: "666",
+  },
+  {
+    id: 1,
+    name: "Kroger",
+    timeInTransit: "111",
+  },
+  {
+    id: 2,
+    name: "Wegmans",
+    timeInTransit: "333",
+  },
+];
+
+const consigneeRows = dummyConsignees.map((consignee) => {
+  return (
+    <tr key={consignee.id}>
+      {Object.values(consignee).map((val) => {
+        return <td>{val}</td>;
+      })}
+    </tr>
+  );
+});
 
 export default function Consignees(props) {
   return (
@@ -21,17 +50,19 @@ export default function Consignees(props) {
         <button>Add New</button>
       </SearchWrapper>
       <Table>
-        <tr>
-          <th>Name</th>
-          <th>Transit Time</th>
-          <th>Actions</th>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td>666</td>
-          <td>action stuff</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Transit Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>{consigneeRows}</tbody>
       </Table>
+      <div>
+        <h4>pagination options</h4>
+      </div>
       {/* search bar + batch upload btn + add new btn */}
       {/* tabular consignee data */}
       {/* pagination options */}
