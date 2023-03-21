@@ -66,10 +66,14 @@ const Wrapper = styled.div`
   }
 `;
 
+// FIXME
+// this is temporary and exists so I can simulate
+// what a login looks like. 100% will not stay like this.
 export default function Login() {
   const submit = (e) => {
     e.preventDefault();
     console.log(`clicked submit button`);
+    window.location.href = "/consignees";
   };
 
   return (
