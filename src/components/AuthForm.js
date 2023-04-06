@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "./elements/Button";
 
 const FormWrapper = styled.div`
   background-color: lightblue;
@@ -21,16 +22,6 @@ const FormHeading = styled.h2`
   text-align: center;
 `;
 
-// TODO extract button to its own component
-const Button = styled.button`
-  min-height: 85px;
-  color: white;
-  font-size: 1.5rem;
-  background-color: teal;
-  border: 0.5px;
-  flex: 0.5 0 85px;
-`;
-
 export function AuthForm({ children }) {
   const loginMessage = "Login";
   return (
@@ -39,6 +30,7 @@ export function AuthForm({ children }) {
         <FormHeader heading={loginMessage}></FormHeader>
         {children}
         <Button
+          positive
           onClick={() => {
             console.log("you clicked the button lol");
           }}

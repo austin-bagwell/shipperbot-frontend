@@ -1,10 +1,12 @@
+// TODO adjust colors to match my color scheme
+
 /* BASE COLORS */
 export const colorWhite = "#ffffff";
 export const colorBlack = "#262626";
 
 export const colorGrey = "#82908d"; // green/grey
 
-export const colorGreen = "#89af5b";
+export const colorGreen = "#008080";
 export const colorRed = "#b04846";
 export const colorLightBlue = "#ADD8E6";
 export const colorYellow = "#d1d156";
