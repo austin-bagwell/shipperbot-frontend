@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MainContentWrapper } from "../components/wrappers/flexWrappers";
+import { AuthForm } from "../components/AuthForm";
 
 const FormWrapper = styled.div`
   background-color: lightblue;
@@ -68,35 +69,29 @@ export default function Signup() {
 
   return (
     <MainContentWrapper>
-      <FormWrapper>
-        <h2 style={{ textAlign: "center" }}>Sign up for free</h2>
-        <Form>
-          <div
-            className="text-input-wrapper"
-            style={{ display: "flex", justifyContent: "space-between" }}
-          >
-            <Label htmlFor="username">username:</Label>
-            <Input name="username" type="text"></Input>
-          </div>
-          <div
-            className="text-input-wrapper"
-            style={{ display: "flex", justifyContent: "space-between" }}
-          >
-            <Label htmlFor="password">password:</Label>
-            <Input name="password" type="password"></Input>
-          </div>
-          <div
-            className="text-input-wrapper"
-            style={{ display: "flex", justifyContent: "space-between" }}
-          >
-            <Label htmlFor="password">confirm password:</Label>
-            <Input name="confirm-password" type="password"></Input>
-          </div>
-        </Form>
-        <Wrapper>
-          <Button onClick={submit}>Signup</Button>
-        </Wrapper>
-      </FormWrapper>
+      <AuthForm>
+        <div
+          className="text-input-wrapper"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
+          <Label htmlFor="username">username:</Label>
+          <Input name="username" type="text"></Input>
+        </div>
+        <div
+          className="text-input-wrapper"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
+          <Label htmlFor="password">password:</Label>
+          <Input name="password" type="password"></Input>
+        </div>
+        <div
+          className="text-input-wrapper"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
+          <Label htmlFor="password">confirm password:</Label>
+          <Input name="confirm-password" type="password"></Input>
+        </div>
+      </AuthForm>
     </MainContentWrapper>
   );
 }
