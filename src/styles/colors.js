@@ -12,7 +12,7 @@ export const colorLightBlue = "#ADD8E6";
 export const colorYellow = "#d1d156";
 
 /* COLORS */
-export const colorPrimary = "#3d8f9d";
+export const colorPrimary = "#ADD8E6";
 export const colorBackground = colorWhite;
 
 export const colorFontPrimary = colorBlack;
