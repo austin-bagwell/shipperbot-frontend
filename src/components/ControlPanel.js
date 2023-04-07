@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Button } from "./elements/Button";
+import { AutofillSearch } from "./features/AutofillSearch";
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-auto-rows: auto;
-  gap: 1rem; 5rem;
+  grid-template-columns: minmax(400px, max-content) 1fr;
+  grid-template-rows: minmax(50px, min-content) 1fr;
+  gap: 1rem;
   margin: 2rem 0 2rem 0;
 `;
 
@@ -24,10 +25,15 @@ const Fieldset = styled.fieldset`
   }
 `;
 
+const StyledSearch = styled(AutofillSearch)`
+  grid-column: 1;
+  grid-row: 1;
+`;
+
 export function ControlPanel({ children }) {
   return (
     <Wrapper>
-      <input type="text" placeholder="searchbar"></input>
+      <AutofillSearch></AutofillSearch>
       <ButtonStyled>+ new</ButtonStyled>
       <Fieldset>
         <p>filter by: </p>
