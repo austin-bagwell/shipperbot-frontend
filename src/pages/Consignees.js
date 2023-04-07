@@ -6,9 +6,10 @@ import {
   TableRow,
   HeaderCell,
 } from "../components/elements/Table";
+import { ControlPanel } from "../components/ControlPanel";
 
 const ContentWrapper = styled.section`
-  max-width: 75vw;
+  max-width: 50vw;
   margin: auto;
 `;
 
@@ -43,7 +44,7 @@ const consigneeRows = dummyConsignees.map((consignee) => {
 export default function Consignees(props) {
   return (
     <ContentWrapper>
-      <h2>gimme dem consignees dumdum</h2>
+      <ControlPanel></ControlPanel>
       <Table numColumns={3}>
         <TableRow>
           <HeaderCell title="ID">ID</HeaderCell>

@@ -98,7 +98,7 @@ export const TableHeader = ({ children }) => {
   return (
     <thead>
       <tr>{childrenWithSort}</tr>
-    </thead>
+    </thead>n
   );
 };
 */
