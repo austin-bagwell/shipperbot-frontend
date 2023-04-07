@@ -19,7 +19,8 @@ export const Button = styled.button`
   padding: 1rem;
   outline: none;
 
-  &:hover {
+  &:hover,
+  :focus {
     color: black;
     background-color: lightpink;
   }
