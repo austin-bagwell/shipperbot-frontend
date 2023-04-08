@@ -1,5 +1,5 @@
-import { AuthForm } from "../components/AuthForm";
+import BackgroundImage from "../components/BackgroundImg";
 
 export function TestPage() {
-  return <AuthForm></AuthForm>;
+  return <BackgroundImage></BackgroundImage>;
 }
