@@ -1,19 +1,10 @@
-import { MainContentWrapper } from "../components/wrappers/flexWrappers";
+import { BackgroundImageMain } from "../components/wrappers/MainContentWrapper";
 import { AuthForm } from "../components/AuthForm";
 import { LabeledInput } from "../components/elements/Input/LabeledInput";
-import Background from "../assets/background_landscape.jpg";
 
 export default function Login() {
   return (
-    <MainContentWrapper
-      style={{
-        backgroundImage: `url(${Background}`,
-        backgroundPosition: "center",
-        height: "100vh",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <BackgroundImageMain>
       <AuthForm>
         <div>
           <LabeledInput
@@ -28,6 +19,6 @@ export default function Login() {
           ></LabeledInput>
         </div>
       </AuthForm>
-    </MainContentWrapper>
+    </BackgroundImageMain>
   );
 }

@@ -1,10 +1,10 @@
-import { MainContentWrapper } from "../components/wrappers/flexWrappers";
+import { BackgroundImageMain } from "../components/wrappers/MainContentWrapper";
 import { AuthForm } from "../components/AuthForm";
 import { LabeledInput } from "../components/elements/Input/LabeledInput";
 
 export default function Signup() {
   return (
-    <MainContentWrapper>
+    <BackgroundImageMain>
       <AuthForm>
         <div>
           <LabeledInput
@@ -24,6 +24,6 @@ export default function Signup() {
           ></LabeledInput>
         </div>
       </AuthForm>
-    </MainContentWrapper>
+    </BackgroundImageMain>
   );
 }
