@@ -1,7 +1,7 @@
 import { MainContentWrapper } from "../components/wrappers/flexWrappers";
 import { AuthForm } from "../components/AuthForm";
 import { LabeledInput } from "../components/elements/Input/LabeledInput";
-import Background from "../assets/background_1.jpg";
+import Background from "../assets/background_landscape.jpg";
 
 export default function Login() {
   return (
