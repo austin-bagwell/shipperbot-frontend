@@ -11,7 +11,7 @@ export function LabeledInput({ label, type, name }) {
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 const Label = styled.label`

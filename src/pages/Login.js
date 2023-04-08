@@ -6,16 +6,18 @@ export default function Login() {
   return (
     <MainContentWrapper>
       <AuthForm>
-        <LabeledInput
-          type="text"
-          name="username"
-          label="username: "
-        ></LabeledInput>
-        <LabeledInput
-          type="password"
-          name="password"
-          label="password: "
-        ></LabeledInput>
+        <div>
+          <LabeledInput
+            type="text"
+            name="username"
+            label="username: "
+          ></LabeledInput>
+          <LabeledInput
+            type="password"
+            name="password"
+            label="password: "
+          ></LabeledInput>
+        </div>
       </AuthForm>
     </MainContentWrapper>
   );
