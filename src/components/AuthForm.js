@@ -38,7 +38,7 @@ export function AuthForm({ children }) {
             console.log("you clicked the button lol");
           }}
         >
-          butt-on
+          submit
         </Button>
       </Form>
     </FormWrapper>
