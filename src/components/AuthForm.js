@@ -2,15 +2,16 @@ import styled from "styled-components";
 import { Button } from "./elements/Button";
 
 const FormWrapper = styled.div`
-  background-color: lightblue;
-  box-shadow: 2px 2px 10px black;
   max-width: 25vw;
   min-height: 30vh;
   padding: 2rem;
   margin: auto;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: lightblue;
+  box-shadow: 2px 2px 10px black;
 `;
 
 const Form = styled.form`
