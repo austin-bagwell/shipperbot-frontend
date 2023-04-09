@@ -8,6 +8,7 @@ import {
   HeaderCell,
 } from "../components/elements/Table";
 import { ControlPanel } from "../components/ControlPanel";
+import { BackgroundImage } from "../components/BackgroundImage";
 
 const StyledMain = styled(Main)`
   max-width: 50vw;
@@ -44,16 +45,18 @@ const consigneeRows = dummyConsignees.map((consignee) => {
 
 export default function Consignees(props) {
   return (
-    <StyledMain>
-      <ControlPanel></ControlPanel>
-      <Table numColumns={3}>
-        <TableRow>
-          <HeaderCell title="ID">ID</HeaderCell>
-          <HeaderCell title="DC Name">DC Name</HeaderCell>
-          <HeaderCell title="Transit Time">Transit Time</HeaderCell>
-        </TableRow>
-        <TableBody>{consigneeRows}</TableBody>
-      </Table>
-    </StyledMain>
+    <BackgroundImage>
+      <StyledMain>
+        <ControlPanel></ControlPanel>
+        <Table numColumns={3}>
+          <TableRow>
+            <HeaderCell title="ID">ID</HeaderCell>
+            <HeaderCell title="DC Name">DC Name</HeaderCell>
+            <HeaderCell title="Transit Time">Transit Time</HeaderCell>
+          </TableRow>
+          <TableBody>{consigneeRows}</TableBody>
+        </Table>
+      </StyledMain>
+    </BackgroundImage>
   );
 }

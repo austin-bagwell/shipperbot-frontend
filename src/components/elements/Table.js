@@ -1,21 +1,13 @@
 // borrowing liberally from dear-petition
-
-// import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faCaretDown,
-//   faCaretUp,
-//   faChevronLeft,
-//   faChevronRight,
-// } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
-import { colorPrimary, greyScale } from "../../styles/colors";
+import { colorGreen, greyScale } from "../../styles/colors";
 
 export const TableStyle = styled.table`
   display: grid;
   border-collapse: collapse;
   min-width: 100%;
   grid-template-columns: ${(props) => props.columnSize};
+  background-color: white;
 
   & thead,
   & tbody,
@@ -34,9 +26,9 @@ export const TableStyle = styled.table`
   & th {
     position: sticky;
     top: 0;
-    background: ${colorPrimary};
+    background: ${colorGreen};
     text-align: left;
-    color: black;
+    color: white;
     user-select: none;
   }
 
