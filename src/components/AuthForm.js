@@ -3,7 +3,7 @@ import { Button } from "./elements/Button";
 
 const FormWrapper = styled.div`
   background-color: lightblue;
-  box-shadow: 3px 6px 4px grey;
+  box-shadow: 2px 2px 10px black;
   max-width: 35vw;
   min-height: 300px;
   padding: 2rem;
