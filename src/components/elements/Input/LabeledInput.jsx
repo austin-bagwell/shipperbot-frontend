@@ -21,7 +21,6 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  color: blue;
   min-width: 200px;
   margin-bottom: 0.5rem;
   border: 0.2px solid black;

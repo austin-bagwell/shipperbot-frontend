@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Main } from "../components/wrappers/MainContentWrapper";
 // Create a Wrapper component that'll render a <section> tag with some styles
 const Section = styled.section`
   padding: 4em;
@@ -38,7 +38,7 @@ const Square = styled.div`
 // Use Title and Section like any other React component – except they're styled!
 export default function Landing() {
   return (
-    <main>
+    <Main>
       <LightSection>
         <FlexColWrapper>
           <h2 style={{ fontSize: "60px" }}>What is shipperBot?</h2>
@@ -72,6 +72,6 @@ export default function Landing() {
         </FlexColWrapper>
       </LightSection>
       <h6 style={{ textAlign: "center" }}>*okay not AI, just basic math</h6>
-    </main>
+    </Main>
   );
 }
