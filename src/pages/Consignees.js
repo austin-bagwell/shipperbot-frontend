@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Main } from "../components/wrappers/MainContentWrapper";
 import {
   Table,
   TableBody,
@@ -8,7 +9,7 @@ import {
 } from "../components/elements/Table";
 import { ControlPanel } from "../components/ControlPanel";
 
-const ContentWrapper = styled.section`
+const StyledMain = styled(Main)`
   max-width: 50vw;
   margin: auto;
 `;
@@ -43,7 +44,7 @@ const consigneeRows = dummyConsignees.map((consignee) => {
 
 export default function Consignees(props) {
   return (
-    <ContentWrapper>
+    <StyledMain>
       <ControlPanel></ControlPanel>
       <Table numColumns={3}>
         <TableRow>
@@ -53,6 +54,6 @@ export default function Consignees(props) {
         </TableRow>
         <TableBody>{consigneeRows}</TableBody>
       </Table>
-    </ContentWrapper>
+    </StyledMain>
   );
 }
