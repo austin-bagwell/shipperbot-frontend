@@ -44,7 +44,7 @@ export function ControlPanel() {
   return (
     <>
       <CenteredWrap>
-        <ButtonStyled>+ new</ButtonStyled>
+        <ButtonStyled onClick={toggleModal}>+ new</ButtonStyled>
       </CenteredWrap>
       <Wrapper>
         <AutofillSearch></AutofillSearch>
@@ -60,3 +60,8 @@ export function ControlPanel() {
     </>
   );
 }
+
+const toggleModal = (e) => {
+  e.preventDefault();
+  console.log("toggle that modal!");
+};

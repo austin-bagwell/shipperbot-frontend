@@ -49,11 +49,13 @@ export default function Consignees(props) {
       <StyledMain>
         <ControlPanel></ControlPanel>
         <Table numColumns={3}>
-          <TableRow>
-            <HeaderCell title="ID">ID</HeaderCell>
-            <HeaderCell title="DC Name">DC Name</HeaderCell>
-            <HeaderCell title="Transit Time">Transit Time</HeaderCell>
-          </TableRow>
+          <thead>
+            <TableRow>
+              <HeaderCell title="ID">ID</HeaderCell>
+              <HeaderCell title="DC Name">DC Name</HeaderCell>
+              <HeaderCell title="Transit Time">Transit Time</HeaderCell>
+            </TableRow>
+          </thead>
           <TableBody>{consigneeRows}</TableBody>
         </Table>
       </StyledMain>
