@@ -1,5 +1,5 @@
-// import BackgroundImage from "../components/BackgroundImg";
+import { Modal } from "../components/Modal";
 
-// export function TestPage() {
-//   return <BackgroundImage></BackgroundImage>;
-// }
+export function TestPage() {
+  return <Modal></Modal>;
+}
